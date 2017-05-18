@@ -1,0 +1,9 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="com.springsecurity.SessionConstants" %>
+<c:set var="sessionUser" value="${sessionScope[SessionConstants.SESSION_ATTR_USER]}"></c:set>
+
+<div><c:out value="${sessionUser.fn} ${sessionUser.sn}"></c:out></div>
+<script>
+var _csrfToken = "${_csrf.token}";
+</script>

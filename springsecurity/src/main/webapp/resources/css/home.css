@@ -1,0 +1,9 @@
+.fc-basicWeek-view{
+	height:100px !important;
+}
+
+
+
+.fc-basicWeek-view tbody tr td .fc-day-grid-container,.fc-basicWeek-view tbody tr td div .fc-week {
+	height:100px !important;
+}
